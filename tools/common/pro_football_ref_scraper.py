@@ -33,4 +33,15 @@ def getNflPlayerUrl(last_name, first_name):
         url_name = f'https://www.pro-football-reference.com/players/{first_init}/{last_name[0:3]}x{first_name[0:2]}00.htm'
     return url_name
 
-def getPlayer
+def getNflPlayerStats(url):
+    '''
+    Description:
+    Get a player's stats based off of pro-football-reference.com
+
+    Inputs: url : string
+    
+    Outputs: [ypg, ypa] : [dict, dict] 
+    '''
+
+    #a;lksjdqapweorfulk;vjasdfkj
+
