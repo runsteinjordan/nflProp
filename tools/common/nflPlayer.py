@@ -1,7 +1,8 @@
 # Import scraping modules
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-import scraper
+import pro_football_ref_scraper
+
 
 class nflPlayer:
     # last_name and first_name are strings
@@ -16,12 +17,6 @@ class nflPlayer:
         self.ypa = {passing : None,
                     rush : None,
                     rec : None}
-    def getUrlName(self, last_name, first_name):
-        last_initial = self.last_name[0].upper()
-        first_initial = self.first_name[0].upper()
-        if len(last_name) >= 4:
-            self.url_name = 
-
+    
     def getGamesPlayed(self):
-
-        
+        pass
