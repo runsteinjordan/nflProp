@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 
-def getPlayerUrl(last_name, first_name):
+def getNflPlayerUrl(last_name, first_name):
     '''
     Description:
     Get a player's unique url tag based off of pro-football-reference.com naming convention
@@ -32,3 +32,5 @@ def getPlayerUrl(last_name, first_name):
     else:
         url_name = f'https://www.pro-football-reference.com/players/{first_init}/{last_name[0:3]}x{first_name[0:2]}00.htm'
     return url_name
+
+def getPlayer
