@@ -9,13 +9,11 @@ class nflPlayer:
         self.last_name = last_name
         self.first_name = first_name
         self.games_played = None
-        self.url_name = getPlayerUrl(self.last_name, self.first_name)
+        self.url = getPlayerUrl(self.last_name, self.first_name)
         self.ypg = {'passing' : None,
                     'rush' : None,
                     'rec' : None}
         self.ypa = {'passing' : None,
                     'rush' : None,
                     'rec' : None}
-    
-    def getGamesPlayed(self):
-        pass
+
