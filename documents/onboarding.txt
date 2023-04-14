@@ -1,0 +1,31 @@
+This document will help onboard any new developers to this project.
+
+Setting up VSCode on windows
+    Follow this link here if you are setting up a new VSCode environment: https://code.visualstudio.com/docs/python/python-tutorial
+    To setup your Linux environment with VSCode, follow the directions in this link: https://code.visualstudio.com/docs/remote/wsl-tutorial
+
+Running a test script
+    In order to gain access to the project's developed modules, changing your PYTHONPATH variable is necessary. To do this, run make_env.sh out of the nflProp directory.
+    Example (... is what ever path you have to the nflProp repository)
+        cd .../nflProp
+        ./make_env.sh
+
+    After setting your PYTHONPATH variable, cd into the test directory and run test_url_name.py
+    Example
+        cd .../nflProp/test
+        python3 test_url_name.py
+    
+    This test file will output two urls. Test them out to ensure the links are valid and you are able to see pro football reference's pages for OBJ and Aaron Rodgers.
+
+Git configuration management
+    If you are unfamiliar with git, please watch this crash course on git: https://www.youtube.com/watch?v=USjZcfj8yxE
+    After cloning the repository, you will need to set up your name and email with git. 
+    Example
+        git config --global user.name "Your Name"
+        git config --global user.email "your@email.com"
+
+    
+
+
+    
+
