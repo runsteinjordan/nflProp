@@ -42,6 +42,7 @@ def getNflPlayerStats(url):
     
     Outputs: [ypg, ypa] : [dict, dict] 
     '''
+    pass
 
-    #a;lksjdqapweorfulk;vjasdfkj
+    
 
