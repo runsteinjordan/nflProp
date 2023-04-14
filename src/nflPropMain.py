@@ -16,3 +16,6 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import re
 
+from tools.common.nflPlayer import *
+
+
