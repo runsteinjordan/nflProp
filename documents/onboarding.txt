@@ -98,7 +98,14 @@ Git configuration management
             git push --set-upstream origin <your development branch name>
 
         Once you are finished developing a feature, create a pull request to the master branch. This easily done using the github GUI on a web browser.
-        
+        Visit https://github.com/runsteinjordan/nflProp/branches and find your branch. Click "New pull request" and fill out the necessary details. 
+        After filling out the details, click create pull request. As of now, 1 reviewer is required to approve your merge request. Once they approve, 
+        the merge request will be completed.
+
+        If you have any additional questions about git workflow, contact Jordan Runstein
+
+    
+
 
 
     
