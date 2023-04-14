@@ -12,7 +12,6 @@ import re
 
 from tools.common.nflPlayer import *
 
-
 test = nflPlayer('Beckham','Odell')
 print(test.url)
 
