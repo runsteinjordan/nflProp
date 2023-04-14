@@ -19,10 +19,89 @@ Running a test script
 
 Git configuration management
     If you are unfamiliar with git, please watch this crash course on git: https://www.youtube.com/watch?v=USjZcfj8yxE
+
     After cloning the repository, you will need to set up your name and email with git. 
     Example
         git config --global user.name "Your Name"
         git config --global user.email "your@email.com"
+
+    Once your name and email is setup, you can begin development. Typical git workflow is as follows:
+        Ensure you are on the master branch
+            git status
+                *** example output ***
+                On branch master
+                Your branch is up to date with 'origin/master'.
+
+                nothing to commit, working tree clean
+
+        If you are not on the master branch, switch to the master branch
+            git checkout master
+                *** example output ***
+                Switched to branch 'master'
+                Your branch is up to date with 'origin/master'.
+            NOTE: if you have changes that aren't stashed or committed, you will run into errors. Stashing and committing changes will be shown below.
+
+        Pull the master branch in case any updates were made to into
+            git pull
+                *** example output ***
+                remote: Enumerating objects: 1, done.
+                remote: Counting objects: 100% (1/1), done.
+                remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+                Unpacking objects: 100% (1/1), 645 bytes | 46.00 KiB/s, done.
+                From github.com:runsteinjordan/nflProp
+                4db05cb..0711a98  master     -> origin/master
+                Updating 4db05cb..0711a98
+                Fast-forward
+                documents/onboarding.txt | 31 +++++++++++++++++++++++++++++++
+                make_env.sh              | 11 +++++++++++
+                2 files changed, 42 insertions(+)
+                create mode 100644 documents/onboarding.txt
+                create mode 100644 make_env.sh
+
+        Create a new development branch
+            git checkout -b <name of your development branch> ------ carrots will be used as a sign for user input. when executing the command, do not use the carrots.
+                *** example output ***
+                Switched to a new branch 'onboarding'
+            
+        Make some changes to existing files, then commit those changes
+            git commit -m "<some message description of what you changed>" </path/to/your/file/file.py>
+            *** example output ***
+            [nflPlayerClass 3b7e8e4] modified nflPlayer class field and changed getPlayerUrl to return entire url
+            4 files changed, 25 insertions(+), 11 deletions(-)
+            create mode 100644 test/test_url_name.py
+
+        If you are creating a file and want to include it in the repository, before committing, you must check the file into the repository 
+            git add </path/to/your/file/file.py>
+            NOTE: this command has no output to the terminal if done successfully
+
+        
+        After committing and/or adding new files to the repository, push your changes to your development branch.
+            git push
+            *** example output ***
+            Enumerating objects: 6, done.
+            Counting objects: 100% (6/6), done.
+            Delta compression using up to 8 threads
+            Compressing objects: 100% (4/4), done.
+            Writing objects: 100% (5/5), 1.24 KiB | 47.00 KiB/s, done.
+            Total 5 (delta 1), reused 0 (delta 0)
+            remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+            remote: 
+            remote: Create a pull request for 'onboarding' on GitHub by visiting:
+            remote:      https://github.com/runsteinjordan/nflProp/pull/new/onboarding
+            remote: 
+            To github.com:runsteinjordan/nflProp.git
+            * [new branch]      onboarding -> onboarding
+            Branch 'onboarding' set up to track remote branch 'onboarding' from 'origin'.
+
+        If this is your first time pushing changes upstream, you will need to set your branch upstream. 
+        Luckily, git gives you an error with the command you need to use if you try and push without setting your branch upstream.
+            git push --set-upstream origin <your development branch name>
+
+        Once you are finished developing a feature, create a pull request to the master branch. This easily done using the github GUI on a web browser.
+        
+
+
+    
 
     
 
