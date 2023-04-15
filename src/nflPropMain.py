@@ -16,6 +16,8 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import re
 
-from tools.common.nflPlayer import *
-
+# Import nflProp modules
+import sys
+tools_path = '../tools/common/'
+sys.path.append(tools_path)
 
