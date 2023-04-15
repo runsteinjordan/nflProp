@@ -1,7 +1,12 @@
 # Import scraping modules
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-from tools.common.pro_football_ref_scraper import *
+
+# Import nflProp modules
+import sys
+tools_path = '../tools/common/'
+sys.path.append(tools_path)
+from pro_football_ref_scraper import *
 
 class nflPlayer:
     # last_name and first_name are strings
